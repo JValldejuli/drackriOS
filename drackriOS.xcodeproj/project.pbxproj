@@ -27,6 +27,7 @@
 		C7AF9E4E21A4E3DB007954DE /* UserAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AF9E4D21A4E3DB007954DE /* UserAuthentication.swift */; };
 		C7AF9E5021A4E6EE007954DE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AF9E4F21A4E6EE007954DE /* LoginViewController.swift */; };
 		C7AF9E5221A4E789007954DE /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AF9E5121A4E789007954DE /* RegisterViewController.swift */; };
+		C7AF9E5421A5362B007954DE /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AF9E5321A5362B007954DE /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		C7AF9E4D21A4E3DB007954DE /* UserAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthentication.swift; sourceTree = "<group>"; };
 		C7AF9E4F21A4E6EE007954DE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C7AF9E5121A4E789007954DE /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		C7AF9E5321A5362B007954DE /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		D158B94EF478EBC680EEC784 /* Pods-drackriOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-drackriOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-drackriOS/Pods-drackriOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,6 +108,7 @@
 				C7AF9E4D21A4E3DB007954DE /* UserAuthentication.swift */,
 				C7AF9E4321A4D324007954DE /* DonationsTableViewController.swift */,
 				C7AF9E4921A4DFAB007954DE /* DonationSearch.swift */,
+				C7AF9E5321A5362B007954DE /* MapViewController.swift */,
 				C7AF9E4B21A4E319007954DE /* DonationSearchResultsTableViewController.swift */,
 				C7AF9E4F21A4E6EE007954DE /* LoginViewController.swift */,
 				C7AF9E5121A4E789007954DE /* RegisterViewController.swift */,
@@ -266,6 +269,7 @@
 				C7AF9E3E21A4C557007954DE /* Donation.swift in Sources */,
 				C7AF9E3821A4C2D4007954DE /* CharityDataProvider.swift in Sources */,
 				C7AF9E4421A4D324007954DE /* DonationsTableViewController.swift in Sources */,
+				C7AF9E5421A5362B007954DE /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

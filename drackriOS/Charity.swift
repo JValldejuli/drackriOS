@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreLocation
+import MapKit
 
 enum CharityType: String, Codable {
     case dropOff, store, warehouse
@@ -45,10 +46,10 @@ extension CLLocationCoordinate2D: Codable {
     }
 }
 
-class Charity: Codable {
+class Charity: NSObject, Codable, MKAnnotation {
     let key: String
     let name: String
-    let coordinates: CLLocationCoordinate2D
+    let coordinate: CLLocationCoordinate2D
     let address: String
     let city: String
     let state: String
@@ -58,9 +59,16 @@ class Charity: Codable {
     let website: String
     var donations: [Donation]
     
+    var title: String? {
+        return name
+    }
+    var subtitle: String? {
+        return phoneNumber
+    }
+    
     init(key: String,
     name: String,
-    coordinates: CLLocationCoordinate2D,
+    coordinate: CLLocationCoordinate2D,
     address: String,
     city: String,
     state: String,
@@ -71,7 +79,7 @@ class Charity: Codable {
     donations: [Donation]) {
         self.key = key
         self.name = name
-        self.coordinates = coordinates
+        self.coordinate = coordinate
         self.address = address
         self.city = city
         self.state = state
@@ -80,5 +88,6 @@ class Charity: Codable {
         self.phoneNumber = phoneNumber
         self.website = website
         self.donations = donations
+        super.init()
     }
 }

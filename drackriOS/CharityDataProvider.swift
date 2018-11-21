@@ -48,7 +48,7 @@ class CharityDataProvider {
             charities.append(
                 Charity(key: row[0],
                         name: row[1],
-                        coordinates: CLLocationCoordinate2D(
+                        coordinate: CLLocationCoordinate2D(
                             latitude: Double(row[2])!,
                             longitude: Double(row[3])!
                         ),

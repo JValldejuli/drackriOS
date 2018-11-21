@@ -28,7 +28,7 @@ class CharityDetailViewController: UIViewController {
         
         title = charity.name
     
-        textView.text = "\(charity.key)\n\(charity.name)\n\(charity.coordinates)\n\(charity.address)\n\(charity.city)\n\(charity.state)\n\(charity.zip)\n\(charity.type)\n\(charity.phoneNumber)\n\(charity.website)"
+        textView.text = "\(charity.key)\n\(charity.name)\n\(charity.coordinate)\n\(charity.address)\n\(charity.city)\n\(charity.state)\n\(charity.zip)\n\(charity.type)\n\(charity.phoneNumber)\n\(charity.website)"
         
     }
     @IBAction func mapTapped(_ sender: Any) {

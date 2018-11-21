@@ -322,6 +322,35 @@
             </objects>
             <point key="canvasLocation" x="41" y="1504"/>
         </scene>
+        <!--Map View Controller-->
+        <scene sceneID="QNR-6s-EAu">
+            <objects>
+                <viewController storyboardIdentifier="map" id="ekg-9q-6qs" customClass="MapViewController" customModule="drackriOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gnL-a0-EA7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="2D3-zo-L57">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yiP-rT-wmG" firstAttribute="bottom" secondItem="2D3-zo-L57" secondAttribute="bottom" id="GFL-ej-1td"/>
+                            <constraint firstItem="yiP-rT-wmG" firstAttribute="trailing" secondItem="2D3-zo-L57" secondAttribute="trailing" id="LLh-GZ-jec"/>
+                            <constraint firstItem="2D3-zo-L57" firstAttribute="top" secondItem="yiP-rT-wmG" secondAttribute="top" id="MIB-DO-v1f"/>
+                            <constraint firstItem="2D3-zo-L57" firstAttribute="leading" secondItem="yiP-rT-wmG" secondAttribute="leading" id="PY9-Ex-tyX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yiP-rT-wmG"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="2D3-zo-L57" id="P8V-nr-lU7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M3Y-5R-NmT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="761" y="-803"/>
+        </scene>
         <!--Charity Detail View Controller-->
         <scene sceneID="rGf-hK-SfJ">
             <objects>
@@ -351,25 +380,16 @@
                                     <action selector="searchTapped:" destination="1FY-DZ-hFi" eventType="touchUpInside" id="arB-gr-nvy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y9a-4t-gJc">
-                                <rect key="frame" x="172.5" y="529" width="30" height="30"/>
-                                <state key="normal" title="Map"/>
-                                <connections>
-                                    <action selector="mapTapped:" destination="1FY-DZ-hFi" eventType="touchUpInside" id="J7e-yx-UsZ"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="iHn-gr-vGH" firstAttribute="top" secondItem="4Sb-DC-WMn" secondAttribute="top" id="Dg5-on-n4W"/>
                             <constraint firstItem="PM9-TU-luW" firstAttribute="centerX" secondItem="7VV-F6-DOm" secondAttribute="centerX" id="HMa-Ma-Op9"/>
-                            <constraint firstItem="y9a-4t-gJc" firstAttribute="top" secondItem="iHn-gr-vGH" secondAttribute="bottom" constant="10" id="HrS-mT-rZF"/>
                             <constraint firstItem="4Sb-DC-WMn" firstAttribute="bottom" secondItem="CIl-ty-Bie" secondAttribute="bottom" constant="20" id="R7R-Ec-b0M"/>
                             <constraint firstItem="iHn-gr-vGH" firstAttribute="leading" secondItem="4Sb-DC-WMn" secondAttribute="leading" id="RJN-pG-OMq"/>
                             <constraint firstItem="CIl-ty-Bie" firstAttribute="top" secondItem="PM9-TU-luW" secondAttribute="bottom" constant="14" id="VsG-hd-ojj"/>
                             <constraint firstItem="4Sb-DC-WMn" firstAttribute="trailing" secondItem="iHn-gr-vGH" secondAttribute="trailing" id="bd8-1d-2f4"/>
-                            <constraint firstItem="PM9-TU-luW" firstAttribute="top" secondItem="y9a-4t-gJc" secondAttribute="bottom" constant="14" id="vk7-1d-HN7"/>
-                            <constraint firstItem="y9a-4t-gJc" firstAttribute="centerX" secondItem="7VV-F6-DOm" secondAttribute="centerX" id="xZc-ED-aEr"/>
+                            <constraint firstItem="PM9-TU-luW" firstAttribute="top" secondItem="iHn-gr-vGH" secondAttribute="bottom" constant="54" id="uLR-BU-yVi"/>
                             <constraint firstItem="CIl-ty-Bie" firstAttribute="centerX" secondItem="7VV-F6-DOm" secondAttribute="centerX" id="zzG-Gu-vhL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4Sb-DC-WMn"/>

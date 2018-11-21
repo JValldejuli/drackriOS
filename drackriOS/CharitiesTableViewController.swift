@@ -13,7 +13,10 @@ class CharitiesTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Search", style: .plain, target: self, action: #selector(searchTapped))
+        navigationItem.leftBarButtonItems = [
+            UIBarButtonItem(title: "Search", style: .plain, target: self, action: #selector(searchTapped)),
+            UIBarButtonItem(title: "Map", style: .plain, target: self, action: #selector(mapTapped))
+        ]
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(logoutTapped))
         
@@ -31,6 +34,11 @@ class CharitiesTableViewController: UITableViewController {
     
     @objc func searchTapped() {
         DonationSearch.searchCharity(charity: nil)
+    }
+    
+    @objc func mapTapped() {
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "map")
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     @objc func logoutTapped() {
