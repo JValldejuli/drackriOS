@@ -148,11 +148,18 @@
                                 <action selector="cancelTapped:" destination="NDx-Wg-JuU" id="X1D-X0-aJe"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="mGD-hk-aFA">
-                            <connections>
-                                <action selector="doneTapped:" destination="NDx-Wg-JuU" id="WGc-sb-5G1"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem style="done" systemItem="done" id="iga-hA-NCe">
+                                <connections>
+                                    <action selector="doneTapped:" destination="NDx-Wg-JuU" id="eef-p8-uu9"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Board" style="plain" id="mGD-hk-aFA">
+                                <connections>
+                                    <action selector="keyboardDismissTapped:" destination="NDx-Wg-JuU" id="OjU-ZA-lSc"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="1000"/>

@@ -60,6 +60,9 @@ class AddDonationViewController: UIViewController, UIPickerViewDelegate, UIPicke
         CharityDataProvider.save()
         dismiss(animated: true, completion: nil)
     }
+    @IBAction func keyboardDismissTapped(_ sender: Any) {
+        view.endEditing(true)
+    }
     @IBAction func cancelTapped(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
